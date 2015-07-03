@@ -1,1 +1,25 @@
+/*
+ * UltrasonicRangeFinder.c
+ *
+ * Created: 03/07/2015 8:38:49 PM
+ *  Author: Nigel Prozenko
+ */ 
 
+
+#include <avr/io.h>
+#include <avr/interrupt.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <util/delay.h>
+
+int main(void)
+{
+    DDRD = 0;
+	
+	DDRB |= _BV(4)
+	
+	while(1)
+    {
+        //TODO:: Please write your application code 
+    }
+}
