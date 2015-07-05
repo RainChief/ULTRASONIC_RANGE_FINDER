@@ -159,6 +159,8 @@ int main (void)
     if(dist > 500) {
       dist = prevDist;
     }
+    
+    // NEED TO ADD PUTTY HERE INSTEAD OF LINE 164-167
     // print distance to serial port
     sprintf(str, "%f\n", dist);
     send_str(str);
