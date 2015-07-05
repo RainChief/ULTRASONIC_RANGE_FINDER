@@ -1,8 +1,9 @@
 // NEED TO ADD PUTTY
 // Talking to ultrasonic sensor HC-SR04 with an ATMega, and 
 // sending distance data using serial communications.
+// credit towards http://electronut.in/talking-to-ultrasonic-distance-sensor-hc-sr04-using-an-attiny84/
 //
-//
+// changes made are my me
  
 #include <avr/io.h>
 #include <string.h>
