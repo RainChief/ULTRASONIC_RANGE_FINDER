@@ -81,7 +81,7 @@ float getDistanceHCSR04()
 	// enable pin-change interrupt on PCINT0:
 	cli();
 	// enable interrupt
-	GIMSK |= (1 << PCIE0);																//
+	TIMSK0 |= (1 << TOIE0);																//
 	// enable pin
 	PCMSK0 |= (1 << PCINT0);															//
 	sei();
@@ -110,7 +110,7 @@ float getDistanceHCSR04()
 	
 	// disable pin-change interrupt:
 	// disable interrupt
-	GIMSK &= ~(1 << PCIE0);										// CHANGE
+	TIMSK0 &= ~(1 << TOIE0);										// CHANGE
 	// disable pin
 	PCMSK0 &= ~(1 << PCINT0);									// CHANGE
 	
